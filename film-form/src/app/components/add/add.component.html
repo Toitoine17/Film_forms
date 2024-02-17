@@ -1,0 +1,16 @@
+<form class="grid">
+    <label for="nom">Nom</label>
+    <input name="nom" type="text" [(ngModel)]="selectedFilm.nom" />
+
+    <label for="annee">Année</label>
+    <input name="annee" type="text" [(ngModel)]="selectedFilm.annee" />
+
+    <label for="Realisateur">Réalisateur</label>
+    <input name="Realisateur" type="text" [(ngModel)]="selectedFilm.realisateur" />
+
+    <label for="Synopsis">Synopsis</label>
+    <input name="Synopsis" type="text" [(ngModel)]="selectedFilm.synopsis" />
+
+    <button type="button" (click)='add()'>Créer</button>
+    <button type="button" (click)='edit()'>Editer</button>
+</form>
